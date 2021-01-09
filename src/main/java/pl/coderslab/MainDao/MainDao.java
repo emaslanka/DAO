@@ -19,7 +19,7 @@ public class MainDao {
 
        //userDao.create(user);
         // SHOW ALL USERS
-       //userDao.printUsers();
+       userDao.printUsers();
 
         // read user
 
@@ -31,7 +31,16 @@ public class MainDao {
         //userDao.delete(3);
        // userDao.printUsers();
 
-        userDao.findAll();
+       // userDao.findAll();
+
+        user.setEmail("e.maslanka@gmail.com");
+        user.setUsername("emaslanka");
+        user.setPassword("hujytghkuj");
+        user.setId(4);
+
+        userDao.update(user);
+        System.out.println("-----------after update-----------");
+        userDao.printUsers();
 
 
 
